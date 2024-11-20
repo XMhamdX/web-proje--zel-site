@@ -1,0 +1,104 @@
+/* Genel stiller */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9fa;
+}
+
+/* Navbar stili */
+.navbar {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+.nav-link {
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #007bff;
+}
+
+/* Ana içerik stili */
+.jumbotron {
+    background: #007bff;
+    color: #ffffff;
+    padding: 4rem;
+    border-radius: 15px;
+}
+
+.jumbotron h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.jumbotron p {
+    font-size: 1.2rem;
+}
+
+/* Kart stili */
+.card {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-body {
+    text-align: center;
+}
+
+/* Galeri resmi stili */
+.gallery-img {
+    transition: transform 0.5s ease;
+    border-radius: 10px;
+}
+
+/* Hizmetler ve İletişim sayfaları */
+.container h1, .container ul {
+    margin-bottom: 2rem;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+beforeul li::before {
+    content: "\2713"; /* Check işareti */
+    color: #007bff;
+    font-weight: bold;
+    margin-right: 0.5rem;
+}
+
+
+/* Footer stili (isteğe bağlı) */
+.footer {
+    text-align: center;
+    padding: 2rem;
+    background: #343a40;
+    color: #ffffff;
+    margin-top: 3rem;
+}
+
+.footer a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer a:hover {
+    color: #ffffff;
+}

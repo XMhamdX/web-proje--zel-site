@@ -1,0 +1,146 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ana Sayfa</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <style>
+        .card-img-top:hover {
+            transform: scale(1.1);
+            transition: transform 0.5s ease;
+        }
+    </style>
+    <link rel="icon" href="images/favicon.png">
+</head>
+<body>
+    <!-- Şerit gezinme -->
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-image: linear-gradient(to right, #6a11cb, #2575fc);">
+        <a class="navbar-brand" href="#" style="font-weight: bold; color: #fff;">Muhammed Abo Alhuda</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Ana Sayfa</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">Hakkımızda</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="services.html">Hizmetler</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="gallery.html">Galeri</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">İletişim</a>
+                </li>
+            </ul>
+            <div style="text-align: center; margin-top: 20px;">
+                <a href="https://t.me/mhmdaboalhwda" target="_blank" style="font-size: 1.2rem; font-weight: bold; color: #0088cc;"><i class="fab fa-telegram" style="margin-right: 10px;"></i>Telegram</a>
+            </div>
+        </div>
+        </div>
+    </nav>
+
+    <!-- Ana içerik -->
+    <div class="container mt-5">
+        <div class="jumbotron text-center animate__animated animate__fadeIn" style="background-image: linear-gradient(to right, #6a11cb, #2575fc); color: #fff;">
+            <h1>Hoşgeldiniz!</h1>
+            <p>İstanbul Topkapı Üniversitesi'nden mezun oldum. <strong>Ben kısaca teknoloji aşığıyım.</strong></p>
+        </div>
+        </div>
+    </div>
+
+    <!-- Çalışmalarım -->
+    <div class="container mt-5">
+        <h2 class="text-center mb-4 animate__animated animate__fadeInUp" style="color: #6a11cb;">Çalışmalarım</h2>
+        <div class="text-center mb-5">
+            
+        </div>
+        <div class="row">
+            <div class="col-md-4 animate__animated animate__zoomIn">
+                <div class="card">
+                    <img src="images/work1.jpg" class="card-img-top" alt="Proje 1 açıklaması">
+                    <div class="card-body text-center">
+                        <p class="card-text" style="font-size: 1.1rem; font-weight: 600; color: #2575fc;">Bu program, video indirme siteleri için modern ve kullanıcı dostu bir arayüz sağlar.</p>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 animate__animated animate__zoomIn">
+                <div class="card">
+                    <img src="images/work2.jpg" class="card-img-top" alt="Proje 2 açıklaması">
+                    <div class="card-body">
+                        <p class="card-text" style="font-size: 1.1rem; font-weight: 600; text-align: center;">Bu program, herhangi bir klavyede dil eklemeden çok dilli yazma imkanı sunar.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 animate__animated animate__zoomIn">
+                <div class="card">
+                    <a href="https://github.com/XMhamdX/tr-to-ar-in-keybword.git" target="_blank"><img src="images/work3.jpg" class="card-img-top" alt="Proje 3 açıklaması"></a>
+                    <div class="card-body">
+                        <p class="card-text" style="font-size: 1.1rem; font-weight: 600; text-align: center;">Bu yazılım, görselleri içeriklerine, renklerine veya içerdikleri kişi sayısına göre otomatik olarak kategorize eder.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript dosyaları -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            // Smooth scrolling for nav links
+            $('a.nav-link').on('click', function(event) {
+                if (this.hash !== "") {
+                    event.preventDefault();
+                    var hash = this.hash;
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800);
+                }
+            });
+        });
+    </script>
+<div class="container-fluid mt-5" style="background-image: linear-gradient(to right, #6a11cb, #2575fc); color: #fff; padding: 40px;">
+    <div class="row text-center">
+        <div class="col-md-3">
+            <h3>250+</h3>
+            <p>Tamamlanan Proje</p>
+        </div>
+        <div class="col-md-3">
+            <h3>50+</h3>
+            <p>Uzman Ekip</p>
+        </div>
+        <div class="col-md-3">
+            <h3>180+</h3>
+            <p>Mutlu Müşteri</p>
+        </div>
+        <div class="col-md-3">
+            <h3>8+</h3>
+            <p>Yıllık Deneyim</p>
+        </div>
+    </div>
+    <div class="row mt-5 text-center">
+        <div class="col-12">
+            <p>© 2024 Muhammed Abo Alhuda. Tüm hakları saklıdır.</p>
+            <div>
+                <a href="#" style="color: #fff; margin-right: 15px;"><i class="fab fa-facebook"></i></a>
+                <a href="#" style="color: #fff; margin-right: 15px;"><i class="fab fa-twitter"></i></a>
+                <a href="#" style="color: #fff; margin-right: 15px;"><i class="fab fa-instagram"></i></a>
+                <a href="#" style="color: #fff; margin-right: 15px;"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
